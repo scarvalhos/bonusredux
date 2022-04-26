@@ -1,5 +1,7 @@
 import { legacy_createStore as createStore } from 'redux'
 
-const store = createStore(() => [])
+import rootReducer from './modules/rootReducer'
+
+const store = createStore(rootReducer)
 
 export default store
